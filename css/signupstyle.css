@@ -1,0 +1,127 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    margin-top: 15px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+span {
+    color: red;
+}
+
+legend {
+    font-weight: bold;
+}
+
+header {
+    background-color: darkcyan;
+    height: 6em;
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin: auto;
+}
+
+form button {
+    width: 50%;
+    height: 40px;
+    margin: auto;
+    background-color: orange;
+    border-style: solid;
+    border-radius: 5px;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+form button:hover {
+    background-color: darkcyan;
+}
+
+form fieldset div {
+    margin: 5%;
+}
+
+fieldset div {
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset div input {
+    border-radius: 5px;
+    border-color: darkcyan;
+    height: 30px;
+    width: 50%;
+}
+
+.heading {
+    text-align: center;
+    background-color: darkcyan;
+    width: 70%;
+    color: white;
+    margin: auto;
+    margin-top: 1%;
+    border-top-left-radius: 40px;
+    box-shadow: 0 10px 60px 0 rgba(0, 139, 139, 0.2), 0 20px 60px 0 rgba(0, 139, 139, 0.19);
+}
+
+#entire-container {
+    width: 70%;
+    border-style: none;
+    margin: auto;
+    box-shadow: 0 10px 60px 0 rgba(0, 139, 139, 0.2), 0 20px 60px 0 rgba(0, 139, 139, 0.19);
+}
+
+.spacing {
+    width: 70%;
+    border-bottom-right-radius: 40px;
+    height: 50px;
+    margin: auto;
+    background-color: darkcyan;
+    box-shadow: 0 10px 60px 0 rgba(0, 139, 139, 0.2), 0 20px 60px 0 rgba(0, 139, 139, 0.19);
+}
+
+footer {
+    background-color: darkcyan;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 910px) {
+    #entire-container {
+        width: 80%;
+    }
+    .heading {
+        width: 80%;
+    }
+    .spacing {
+        width: 80%;
+    }
+    fieldset div {
+        display: flex;
+        flex-direction: column;
+    }
+    fieldset div input,
+    fieldset div label {
+        width: 100%;
+    }
+}
+
+@media(max-width: 430px) {
+    #entire-container {
+        width: 100%;
+    }
+    .heading {
+        width: 100%;
+    }
+    .spacing {
+        width: 100%;
+    }
+}
